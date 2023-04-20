@@ -8,7 +8,7 @@ datasource db {
 }
 
 model Produto {
-  id Int @id @default(autoincrement())
+  id String @id @default(uuid())
   nome String @unique
   preco Float
   descricao String
@@ -23,7 +23,7 @@ model Produto {
 }
 
 model User{
-  id Int @id @default(autoincrement())
+  id String @id @default(uuid())
   email String @unique
   name String
   senha String
@@ -37,9 +37,9 @@ model User{
 
 model ProdutoCarrinho{
   user User @relation("user", fields: [userId], references: [id])
-  userId Int
+  userId String
   produto Produto @relation("produto", fields: [produtoId], references: [id])
-  produtoId Int
+  produtoId String
 
   @@id([userId,produtoId])
   @@map("produtocarrinho")

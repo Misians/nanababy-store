@@ -1,4 +1,4 @@
 export interface CreateProdutoRentDTO{
-    produtoId: number;
-    userId: number;
+    produtoId: string;
+    userId: string;
 }
