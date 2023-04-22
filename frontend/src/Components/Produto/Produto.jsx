@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from 'react'
+import api from '../../Services/api';
+import Raio from "../../imgs/raio.png";
+import "./Produto.css"
+import Heart from "../../imgs/heart.png";
 
 const Produto = () => {
     const [posts, setPosts] = useState([]);
@@ -25,20 +29,28 @@ const Produto = () => {
             NÃO PERCA NOSSA NENÊ FRIDAY
         </div>
         <div className="n-baixo">
-        <div className='produtos'>
-        {posts.length === 0 ?( <p>Carregando produtos...</p>) : (
-          posts.map((post) => (
-            <div className='produto-unico' key={post.id}>
-              <h1 className='produto-categoria' >{post.nome}</h1>
+            <div className='produtos'>
+            {posts.length === 0 ?( <p>Carregando produtos...</p>) : (
+                posts.map((post) => (
+                <div className='produto-top' key={post.id}>
+                    <div className="produto-unico">
+                        <img width={200} src={post.image} alt="" />
+                        <div className="heart">
+                            <img width={40} src={Heart} alt="" />
+                        </div>
+                        
+                        <h1 className='produto-categoria' >{post.nome}</h1>
+                        <img src={Raio} alt="" />
+                        <p>ENTREGA RÁPIDA PARA SUA REGIÃO</p>
+                        <p>{post.preco}</p>
+                    </div>
+                        
+                </div>
+                
+            )))}
             </div>
-          ))
-        )}
         </div>
     </div>
-        
-    </div>
-
-    )
-}
+    )}
 
 export default Produto
