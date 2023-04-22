@@ -6,8 +6,7 @@ import './Header.css'
 const Header = () => {
   return (
     <div className='app_navbar'>
-        <div className="imagem">
-            <img src={Banner} alt="" />
+        <div className="banner_imagem"><img src={Banner} alt="" />     
         </div>
         <div className="navbar">
             <ul>
