@@ -1,0 +1,28 @@
+.footer-c{
+    background-color: #D9D9D9;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+.footer-c>ul>:nth-child(1){
+    color: #28A8BA;
+    font-family: 'Lilita one';
+}
+.footer-c>ul>li{
+    font-family: 'Inter';
+    font-size: 1rem;
+    font-style: normal;
+    color: #000;
+}
+
+.copy>:nth-child(1){
+    text-align: center;
+    padding: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 15px;
+    background: #5C5C5C;
+    color: #fff;
+}

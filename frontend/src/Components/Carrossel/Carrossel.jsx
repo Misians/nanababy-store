@@ -13,7 +13,7 @@ const Carrossel = () => {
         {nome: 'QUARTOS', icon: Quarto},
         {nome: 'ROUPAS', icon: Roupa},
         {nome: 'MAMADEIRA', icon: Mamadeira},
-        {nome: 'CARRINHO', icon: Carrinho},
+        {nome: 'CARRINHOS', icon: Carrinho},
     ]
 
     return (

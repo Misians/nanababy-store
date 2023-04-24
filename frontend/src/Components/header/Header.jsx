@@ -13,10 +13,8 @@ const Header = () => {
                 <li>HOME</li>
                 <li>CATEGORIA</li>
                 <li>PERSONALIZADOS</li>
-
-            <img src={Icon} alt="" />
-
-                <li>CARRINHO</li>
+                <img src={Icon} alt="" />
+                <li> CARRINHO </li>
                 <li>FAVORITO</li>
                 <li>MINHAS COMPRAS</li>
             </ul>

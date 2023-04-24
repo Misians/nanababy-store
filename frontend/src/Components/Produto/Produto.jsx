@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import api from '../../Services/api';
-import Raio from "../../imgs/raio.png";
+import { FiZap, FiHeart, FiShoppingCart } from "react-icons/fi";
 import "./Produto.css"
-import Heart from "../../imgs/heart.png";
 
 const Produto = () => {
     const [posts, setPosts] = useState([]);
@@ -26,7 +24,8 @@ const Produto = () => {
 
     <div className="container">
         <div className="n-topo">
-            NÃO PERCA NOSSA NENÊ FRIDAY
+            <p>NÃO PERCA NOSSA NENÊ FRIDAY!!</p>
+            <p>DESCONTOS TODA SEXTA!</p>
         </div>
         <div className="n-baixo">
             <div className='produtos'>
@@ -34,15 +33,22 @@ const Produto = () => {
                 posts.map((post) => (
                 <div className='produto-top' key={post.id}>
                     <div className="produto-unico">
-                        <img width={200} src={post.image} alt="" />
-                        <div className="heart">
-                            <img width={40} src={Heart} alt="" />
+                        <img width={250} src={post.image} alt="" />
+                        <div className="conteudo">
+                            <div className="carrinho">
+                                <a href="/"><FiHeart /></a>
+                                <a href='/'><FiShoppingCart /></a>
+                            </div>
+                            
+                            <h1 className='produto-categoria' >{post.nome}</h1>
+                            <div className="juntar">
+                                <FiZap /> 
+                                <p>ENTREGA RÁPIDA PARA SUA REGIÃO</p>
+                            </div>
+                        <p>R$ {post.preco}</p>
+                        
                         </div>
                         
-                        <h1 className='produto-categoria' >{post.nome}</h1>
-                        <img src={Raio} alt="" />
-                        <p>ENTREGA RÁPIDA PARA SUA REGIÃO</p>
-                        <p>{post.preco}</p>
                     </div>
                         
                 </div>
@@ -50,6 +56,10 @@ const Produto = () => {
             )))}
             </div>
         </div>
+        <div className="button">
+            VER MAIS
+        </div>
+        
     </div>
     )}
 

@@ -1,37 +1,101 @@
 .pdt{
-    margin: 5px;
-    padding: 5px;
     background-color: aquamarine;
 }
 .produtos{
-    margin: 5px;
-    padding: 5px;
-    width: fit-content;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     flex-direction: row;
 }
 .n-baixo{
     background-color: #fff;
     display: flex;
+    margin-bottom: 15px;
 }
 .produto-unico{
-    background: #272731;
-    box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    border-bottom: 5px #fff00f;
-    margin: 15px;
-    padding: 15px;
-    cursor: pointer;
-}
-.heart{
-    margin: 0;
-    width: 45px;
-    height: 45px;
-    justify-items: center;
+    background: #ffffff;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 31px rgba(0, 0, 0, 0.20);    border-radius: 10px;
+    border-bottom: 5px #fff00f;
+    margin: 15px;
+    cursor: pointer;
+    width: 250px;
+}
+.conteudo{
+    padding: 10px;
+    color: #6ED8E6;
+}
+.produto-unico>img{
+    border-radius: 9px 9px 0px 0px;
+
+}
+.juntar{
+    display: flex;
+    flex-direction: row;
+}
+.conteudo>p{
+    color: #8C8B8B;
+    font-size: 2rem;
+    align-items: end;
+    text-align: end;
+}
+.conteudo>h1{
+    color: #8C8B8B;
+    font-weight: 100;
+}
+.n-topo{
+    margin: 30px;
+    font-size: 3rem;
+    color: #6ED8E6;
     text-align: center;
-    background-color: #ffffff80;
-    border-radius: 40px;
-    border: 1px solid #27273181;
+}
+.n-topo>:nth-child(2){
+    color: #8C8B8B;
+    font-size: 2rem;
+}
+.juntar>:nth-child(1){
+    font-size: 40px;
+}
+.carrinho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.carrinho>:nth-child(1){
+    position: relative;
+    color: #6ED8E6;
+    display: flex;
+    font-size: 35px;
+    background-color: rgba(252, 252, 252, 0.479);
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #e2e2e2;
+}
+.carrinho>:nth-child(2){
+    position: relative;
+    display: flex;
+    color: #ffffff;
+    text-align: center;
+    box-sizing: content-box;
+    font-size: 35px;
+    background-color: #6ED8E6;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #d8d8d8;
+}
+.button{
+    margin: 20px;
+    cursor: pointer;
+    background-color: #6ED8E6;
+    align-items: center;
+    width: 143px;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 10px 25px 10px 25px;
+    border: none;
+    border-radius: 7px;
+    margin: 0  auto;
 }
