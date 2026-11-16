@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "./static/css/main.c8de03b0.css",
+    "main.js": "./static/js/main.5d72baa9.js",
+    "static/media/fundo.png": "./static/media/fundo.742b38cc1df18358973b.png",
+    "static/media/img.png": "./static/media/img.786cc1830378869af3df.png",
+    "static/media/quarto.png": "./static/media/quarto.3b954f4e4585a747aefe.png",
+    "static/media/roupa.png": "./static/media/roupa.dbfd075839180872e5f9.png",
+    "static/media/mamadeira.png": "./static/media/mamadeira.3a135ad111a8a4af4501.png",
+    "static/media/berco.png": "./static/media/berco.dadeefc0546dda450fe6.png",
+    "static/media/carrinho.png": "./static/media/carrinho.202d2b435387bd7512a3.png",
+    "static/media/icone.png": "./static/media/icone.8556236da9ebf45cd14e.png",
+    "index.html": "./index.html",
+    "main.c8de03b0.css.map": "./static/css/main.c8de03b0.css.map",
+    "main.5d72baa9.js.map": "./static/js/main.5d72baa9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8de03b0.css",
+    "static/js/main.5d72baa9.js"
+  ]
+}
